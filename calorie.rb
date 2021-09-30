@@ -10,11 +10,14 @@ def your_calories (details, activity, user)
     end
 
     if user.user_choice == 0
-        print personal_calories - 500
+        personal_calories - 500
+        print "Your daily calories are: #{personal_calories - 500}"
     elsif user.user_choice == 1
-        print personal_calories
+        personal_calories
+        print "Your daily calories are: #{personal_calories}"  
     elsif user.user_choice == 2
-        print personal_calories + 500
+        personal_calories + 500
+        print "Your daily calories are: #{personal_calories + 500}"
     end
     
     

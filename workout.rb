@@ -13,7 +13,7 @@ class Workout
 
     end
     def your_workout ()
-        puts "Would you like a custom made workout? "
+        p "Would you like a custom made workout? "
         
         case (gets.strip)
         when "yes"
