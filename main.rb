@@ -23,3 +23,6 @@ activity.your_activity_level(user)
 
 calorie = Calorie.new
 calorie.your_calories(details, activity, user)
+
+workout = Workout.new
+workout.your_workout
