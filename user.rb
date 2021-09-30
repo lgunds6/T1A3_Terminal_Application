@@ -8,13 +8,13 @@ class User
 #--------------Fitness goal options---------------#
     def initialize()
 
-        print "Enter your first name: "
+        print "Enter your first name: ".colorize(:blue)
         @name = gets.strip
         @intro = "please choose your fitness goal from the following three options"
         @options = []
-        @options.push("Would you like to lose weight?")
-        @options.push("Would you like to maintain your current weight?")
-        @options.push("Would you like to bulk up?")
+        @options.push("Would you like to lose weight?".colorize(:yellow))
+        @options.push("Would you like to maintain your current weight?".colorize(:yellow))
+        @options.push("Would you like to bulk up?".colorize(:yellow))
     end
 #----------------Fitness goal methods--------------#
 
@@ -26,7 +26,7 @@ class User
             puts "#{options_index + 1}. #{option}"
             options_index += 1
         end
-        print "Choose your goal: "
+        print "Choose your goal: ".colorize(:blue)
         @user_choice = gets.to_i - 1
     end
 end

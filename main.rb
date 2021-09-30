@@ -1,10 +1,11 @@
-
+require 'colorize'
+require 'colorized_string'
 require_relative "activity_level"
 require_relative "user_details"
 require_relative "user"
 require_relative "calorie"
 
-puts "Welcome to Luke's fitness app"
+puts "Welcome to Luke's fitness app".colorize(:blue)
 
 
 user = User.new
