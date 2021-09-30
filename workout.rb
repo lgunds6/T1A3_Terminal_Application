@@ -2,17 +2,7 @@ class Workout
     attr_reader :workout
     
     def initialize()
-        puts "Would you like a custom made workout? "
         
-        case (gets.strip)
-        when "yes"
-            for activity in @workout
-                puts "#{workout_index + 1}. #{workout}"
-                workout_index += 1
-            end
-        when "no"
-            puts "Thanks for using LGFIT! "
-        end
   
     @workout = []
     @workout.push("5 sets of Dumbell Chest Press - 10-12 reps".colorize(:yellow))
@@ -22,16 +12,18 @@ class Workout
 
 
     end
-#     def your_workout ()
-  
+    def your_workout ()
+        puts "Would you like a custom made workout? "
         
-        
-#          workout_index = 0
-        
-#     else your_workout == "n"
-#         puts "Thanks for using LGFIT"
-    
-#     end
-
-# end
+        case (gets.strip)
+        when "yes"
+            workout_index = 0
+            for workout in @workout
+                puts "#{workout_index + 1}. #{workout}"
+                workout_index += 1
+            end
+        when "no"
+            puts "Thanks for using LGFIT! "
+        end
+    end
 end
