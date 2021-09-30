@@ -8,6 +8,17 @@ class User
 #--------------Fitness goal options---------------#
     def initialize()
 
+        @art = ""\
+"    _        _____  ______  _____  _______ \"\ 
+"   | |      / ____||  ____||_   _||__   __| \"\
+"   | |     | |  __ | |__     | |     | |    \"\
+"   | |     | | |_ ||  __|    | |     | |    \"\
+"   | |____ | |__| || |      _| |_    | |    \"\
+"   |______| \_____||_|     |_____|   |_|    \"\
+                                                
+                                                
+        
+
         print "Enter your first name: ".colorize(:blue)
         @name = gets.strip
         @intro = "please choose your fitness goal from the following three options"
