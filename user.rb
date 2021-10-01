@@ -15,9 +15,9 @@ class User
         @name = gets.strip
         @intro = "please choose your fitness goal from the following three options:"
         @options = []
-        @options.push("Would you like to lose weight?".colorize(:yellow))
-        @options.push("Would you like to maintain your current weight?".colorize(:yellow))
-        @options.push("Would you like to bulk up?".colorize(:yellow))
+        @options.push(   "Would you like to lose weight?".colorize(:yellow))
+        @options.push(   "Would you like to maintain your current weight?".colorize(:yellow))
+        @options.push(   "Would you like to bulk up?".colorize(:yellow))
     end
 #----------------Fitness goal methods--------------#
 

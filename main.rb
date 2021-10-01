@@ -8,7 +8,11 @@ require_relative "calorie"
 require_relative "workout"
 
 
-puts "Welcome to Luke's fitness app".colorize(:blue)
+a = Artii::Base.new
+a.asciify('LGFIT')
+puts a.asciify("LGFIT")
+
+puts "Welcome to LGFIT app".colorize(:blue)
 
 
 user = User.new
