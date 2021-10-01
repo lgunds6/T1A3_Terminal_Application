@@ -14,7 +14,7 @@ class User
         print "Enter your first name: \n".colorize(:blue)
         @name = gets.strip
         until @name != ""
-            puts "We would love to know your name"
+            puts "We would love to know your name".colorize(:red)
             @name = gets.strip
         end
         @intro = "please choose your fitness goal from the following three options (1-3):\n"
@@ -41,7 +41,7 @@ class User
             if @user_choice.between?(0,2)
                 break
             else
-            puts "Try again"
+            puts "Please enter a number from 1-3".colorize(:red)
             end
         end
     end

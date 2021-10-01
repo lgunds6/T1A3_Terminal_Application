@@ -28,7 +28,7 @@ class ActivityLevel
             if user_choice.between?(0,3)
                 break
             else
-            puts "Try again"
+            puts "Please enter a number from 1-4".colorize(:red)
             user_choice = gets.to_i-1
             end
         end

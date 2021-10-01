@@ -63,11 +63,10 @@ end
         user_choice = gets.to_i - 1
 
         loop do 
-            
             if user_choice.between?(0,1)
                 break
             else
-            puts "Try again"
+            puts "Please enter 1 or 2".colorize(:red)
             user_choice = gets.to_i-1
             end
         end
