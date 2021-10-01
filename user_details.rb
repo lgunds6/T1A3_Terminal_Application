@@ -9,7 +9,7 @@ class UserDetails
 
 def initialize()
     
-    print "Please enter your age: ".colorize(:blue)
+    print "Please enter your age: \n".colorize(:blue)
     @age = gets.strip
     
     while true
@@ -22,7 +22,7 @@ def initialize()
     end
    @age = @age.to_i
 
-    print "Please enter your weight (kg): ".colorize(:blue)
+    print "Please enter your weight (kg): \n".colorize(:blue)
     @weight = gets.strip
 
     while true
@@ -35,7 +35,7 @@ def initialize()
     end
     @weight = @weight.to_i
 
-    print "Please enter your height (cm): ".colorize(:blue)
+    print "Please enter your height (cm): \n".colorize(:blue)
     @height = gets.strip
 
     while true
@@ -48,18 +48,18 @@ def initialize()
     end
     @height = @height.to_i
     @user_gender = []
-    @user_gender.push("Male".colorize(:green))
-    @user_gender.push("Female".colorize(:light_red))
+    @user_gender.push("Male\n".colorize(:green))
+    @user_gender.push("Female\n".colorize(:light_red))
 end
     def your_gender (user)
-        puts "#{user.name}, please select your gender: ".colorize(:blue)
+        puts "#{user.name}, please select your gender: \n".colorize(:blue)
   
         gender_index = 0
         for gender in @user_gender
             puts "#{gender_index + 1}. #{gender}"
             gender_index += 1
         end
-        print "Choose your gender: ".colorize(:blue)
+        print "Choose your gender: \n".colorize(:blue)
         user_choice = gets.to_i - 1
 
         if user_choice == 0

@@ -12,7 +12,7 @@ a = Artii::Base.new
 a.asciify('LGFIT')
 puts a.asciify("LGFIT")
 
-puts "Welcome to LGFIT app".colorize(:blue)
+puts "Welcome to LGFIT app\n".colorize(:blue)
 
 
 user = User.new
@@ -42,7 +42,7 @@ workout.your_workout
 
 
 
-    puts "Would you like to start again? - #{"Type Yes/No".red.on_green.bold}"
+    puts "Would you like to start again? - #{"Type Yes/No".red.on_green.bold}\n"
     answer = gets.strip
     
     case (answer)
@@ -51,7 +51,7 @@ workout.your_workout
         load "main.rb"
     
     when "no"
-        puts "Thanks for using LGFIT!".blue
+        puts "Thanks for using LGFIT!\n".blue
         exit
     end
 
