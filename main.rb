@@ -25,6 +25,7 @@ details.your_gender(user)
 activity = ActivityLevel.new
 activity.your_activity_level(user)
 
+system("clear")
 a = Artii::Base.new
 a.asciify('CALORIES')
 puts a.asciify("CALORIES")
@@ -38,3 +39,20 @@ puts a.asciify("WORKOUT")
 
 workout = Workout.new
 workout.your_workout
+
+
+
+    puts "Would you like to start again? - #{"Type Yes/No".red.on_green.bold}"
+    answer = gets.strip
+    
+    case (answer)
+    when "yes"
+        system("clear")
+        load "main.rb"
+    
+    when "no"
+        puts "Thanks for using LGFIT!".blue
+        exit
+    end
+
+
