@@ -13,7 +13,7 @@ class Workout
 
     end
     def your_workout ()
-        p "Would you like a custom made workout? "
+        puts "#{"Would you like a custom made workout?".blue} - #{"Type Yes/No".red.on_green.bold}"
         
         case (gets.strip)
         when "yes"
@@ -23,7 +23,7 @@ class Workout
                 workout_index += 1
             end
         when "no"
-            puts "Thanks for using LGFIT! "
+            puts "Thanks for using LGFIT!".blue
         end
     end
 end
