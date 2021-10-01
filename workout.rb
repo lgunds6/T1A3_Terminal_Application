@@ -23,7 +23,7 @@ class Workout
                 workout_index += 1
             end
         when "no"
-            puts "Thanks for using LGFIT!\n".blue
+            puts "Thanks for using LGFIT!\n".green
         end
     end
 end
