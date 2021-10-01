@@ -25,8 +25,16 @@ details.your_gender(user)
 activity = ActivityLevel.new
 activity.your_activity_level(user)
 
+a = Artii::Base.new
+a.asciify('CALORIES')
+puts a.asciify("CALORIES")
+
 calorie = Calorie.new
 calorie.your_calories(details, activity, user)
+
+a = Artii::Base.new
+a.asciify('WORKOUT')
+puts a.asciify("WORKOUT")
 
 workout = Workout.new
 workout.your_workout
