@@ -62,6 +62,16 @@ end
         print "Choose your gender: \n".colorize(:blue)
         user_choice = gets.to_i - 1
 
+        loop do 
+            
+            if user_choice.between?(0,1)
+                break
+            else
+            puts "Try again"
+            user_choice = gets.to_i-1
+            end
+        end
+
         if user_choice == 0
             @gender_selected = 0
         elsif user_choice == 1

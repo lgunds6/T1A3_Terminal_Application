@@ -23,6 +23,15 @@ class ActivityLevel
         end
         print "Choose your activity level: \n".colorize(:blue)
         user_choice = gets.to_i - 1
+        loop do 
+            
+            if user_choice.between?(0,3)
+                break
+            else
+            puts "Try again"
+            user_choice = gets.to_i-1
+            end
+        end
 
         if user_choice == 0
             @activity_multiplier = 1.2
