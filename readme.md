@@ -34,3 +34,6 @@ R7 - Outline of user interaction
 6. Using all the information collected the prgram will calculate the users recommended daily calories
 7. The program will prompt the user if they will like to view a customer workout plan. If the user enters yes, it will print out a workout plan, if no the program will continue. 
 8. The final question the rogram will ask is if the user would like to start again. If the user types yes, the program will system clear and begin the program. If the user types no the program will end. 
+
+R8 - Diagram
+![Application-diagram](images/Workflow.png)
