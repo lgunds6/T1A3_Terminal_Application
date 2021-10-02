@@ -26,7 +26,7 @@ class User
 #----------------Fitness goal methods--------------#
 
     def selecting_your_goal()
-        puts "#{@name} #{@intro}".blue
+        puts "#{@name}, #{@intro}".blue
     
         options_index = 0
         for option in @options

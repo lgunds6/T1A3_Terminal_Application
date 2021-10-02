@@ -11,13 +11,13 @@ def your_calories (details, activity, user)
 
     if user.user_choice == 0
         personal_calories - 500
-        puts "Your daily calories are: #{personal_calories - 500}".green.on_blue.bold
+        puts "Your recommended daily calories are: #{personal_calories - 500}".green.on_blue.bold
     elsif user.user_choice == 1
         personal_calories
-        puts "Your daily calories are: #{personal_calories}".green.on_blue.bold
+        puts "Your recommended daily calories are: #{personal_calories}".green.on_blue.bold
     elsif user.user_choice == 2
         personal_calories + 500
-        puts "Your daily calories are: #{personal_calories + 500}".green.on_blue.bold
+        puts "Your recommended daily calories are: #{personal_calories + 500}".green.on_blue.bold
     end
     
     
