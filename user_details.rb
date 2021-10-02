@@ -5,13 +5,11 @@ class UserDetails
     attr_reader :user_gender
     attr_reader :gender_selected
 
-
-
+#-----------User detail questionaire-----------#
 def initialize()
     
     print "Please enter your age: \n".colorize(:blue)
     @age = gets.strip
-    
     while true
         if @age.to_i.to_s == @age
             break
@@ -20,11 +18,10 @@ def initialize()
             @age = gets.strip
         end
     end
-   @age = @age.to_i
+    @age = @age.to_i
 
     print "Please enter your weight (kg): \n".colorize(:blue)
     @weight = gets.strip
-
     while true
         if @weight.to_i.to_s == @weight
             break
@@ -37,7 +34,6 @@ def initialize()
 
     print "Please enter your height (cm): \n".colorize(:blue)
     @height = gets.strip
-
     while true
         if @height.to_i.to_s == @height
             break
@@ -46,6 +42,8 @@ def initialize()
             @height = gets.strip
         end
     end
+    
+    #----------------Gender array-------------#
     @height = @height.to_i
     @user_gender = []
     @user_gender.push("Male\n".colorize(:green))
@@ -77,9 +75,5 @@ end
             @gender_selected = 1
        
         end
-
     end
-    
-
-
 end

@@ -1,7 +1,5 @@
 class Calorie
-
-
-
+#------------Calorie calculation----------#
 def your_calories (details, activity, user)
     if details.gender_selected == 0
         personal_calories  = (10 * details.weight + 6.25 * details.height - 5 * details.age + 5) * activity.activity_multiplier
@@ -19,13 +17,5 @@ def your_calories (details, activity, user)
         personal_calories + 500
         puts "Your recommended daily calories are: #{personal_calories + 500}".green.on_blue.bold
     end
-    
-    
-
 end
-
-
-
-
-
 end

@@ -8,9 +8,6 @@ class User
 #--------------Fitness goal options---------------#
     def initialize()
 
-                                                
-        
-
         print "Enter your first name: \n".colorize(:blue)
         @name = gets.strip
         until @name != ""
@@ -24,7 +21,6 @@ class User
         @options.push("Would you like to bulk up?\n".colorize(:yellow))
     end
 #----------------Fitness goal methods--------------#
-
     def selecting_your_goal()
         puts "#{@name}, #{@intro}".blue
     
