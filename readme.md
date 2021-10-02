@@ -1,6 +1,21 @@
 
+## Github Repository
+https://github.com/lgunds6/T1A3_Terminal_Application/tree/master
 
-R5 - Purpose
+# T1A3 - Terminal Application 
+
+## Table of contents
+
+- [R5-Purpose:](#Purpose)
+- [R6-Features:](#R6-Features)
+- [R7-Outline-of-user-interaction:](#R7-Outline-of-user-interaction:)
+- [R8-Diagram:](#R8-Diagram)
+- [R9-Development-Plan:](#R9-Development-Plan)
+- [R10-Help-Documentation:](#R10-Help-Documentation)
+- [Tech-stack:](#Tech-stack)
+
+
+R5-Purpose
 What?
 My app LGFIT will provide users a recommended (estimate) daily calories amount based on their chose fitness goals and personal data.
 Why?
@@ -12,7 +27,7 @@ How to use the app.
 The program will take a user through some simple questions. Using this  data, the program will calculate the users daily calorie total using the (Mifflin-St Jeor Equation). The user will be able to tailor their results based on three seperate fitness goals and will have the option to access a customer workout plan if they need to. The program will allow auser to restart at the endshould they need to change  some of their input data. 
 
 
-R6 - Features
+R6-Features
 
 1. Individual fitness goal
 This feature will allow a user to choose their fitness goal. Each goal will change the users customer daily calorie reccomendation. Each goal will be printed out on a seperate line and the user will select which option (1-3).
@@ -25,7 +40,8 @@ To ensure accurate calculations based on activity level, I have added in another
 3. Workout plan
 We have built in a customer workout plan that a user can choose to view or not. The 4 items of the array will be printed out for the user should they choose to view the workout plan. We provide the user the option to view it by putting "would you like to view a custom workout plan" The user is asked to respond with either a yes or no. Using a case statment, when the user input is "yes" the program will print out the array for the user to view. When the user input is "no" the program coninues on and does not print out the workout plan.
 
-R7 - Outline of user interaction
+R7-Outline of user interaction
+
 1. Welcome the user to the app and obtain the users name. I use a loop to ensure the user provides something and will raise an error asking for the user name before continuing. 
 2. User is provided 3 fitness goals options to choose from. The program will raise an error if the user does not select 1-3.
 3. Porgram will ask the user their age, weight and height. The program will stop and advise the user to enter a whole number if the user puts anything other than a whole number. The program also instruct the user to enter weight as (kg) and height as (cm).
@@ -35,5 +51,34 @@ R7 - Outline of user interaction
 7. The program will prompt the user if they will like to view a customer workout plan. If the user enters yes, it will print out a workout plan, if no the program will continue. 
 8. The final question the rogram will ask is if the user would like to start again. If the user types yes, the program will system clear and begin the program. If the user types no the program will end. 
 
-R8 - Diagram
+R8-Diagram
+
 ![Application-diagram](images/Workflow.png)
+
+R9-Development Plan
+
+For my plan I have used a trello board and used cards to capture each section of my program. Each card provides an overview and details of the function/feature being developed. Each card has a checklist of items that I will workthrough to ensure the feature/function is completed and validated. 
+I have also included some cards for Gem use to ensure I meet this  requirement.
+I have included my test cases that I have conducted on the application to ensure application runs effectively. 
+
+T1A3 - Trello Board
+https://trello.com/b/TWOmapFy/kanban-t1a3-terminal-application
+
+R10-Help Documentation 
+
+Installation steps:
+To run the program use  the following commandin your terminal: sh run_app.sh
+The script will run the following and install all Gem dependencies for optimal user experience:
+- bundle install
+- git add Gemfile Gemfile.lock
+- ruby main.rb
+- bundle install colorize
+- bundle  install ARTII
+
+Application dependencies:
+For optimal user experience the program requires the following Gems installed:
+- Gem bundler
+- Gem colorize
+- Gem ARTII
+
+
